@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="JobShield India — AI-powered job scam investigation.">
+
+  <title>JobShield India</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="hero">
+
+      <div class="logo">🛡️</div>
+
+      <h1>JobShield India</h1>
+
+      <p class="tagline">
+        Investigate job opportunities before you apply.
+      </p>
+
+      <p class="description">
+        Check job listings, company reputation, scam reports and news
+        using live web evidence.
+      </p>
+
+      <div class="search-box">
+
+        <input type="text" id="jobQuery" placeholder="Enter company name or job opportunity..." autocomplete="off">
+
+        <button id="investigateBtn">
+          🔎 Investigate
+        </button>
+
+      </div>
+
+      <p id="statusMessage" class="status-message">
+        Ready to investigate.
+      </p>
+
+    </section>
+
+    <section id="results" class="results hidden">
+
+      <div class="risk-card">
+
+        <p class="small-title">RISK ASSESSMENT</p>
+
+        <div id="riskScore" class="risk-score">
+          --
+        </div>
+        <div class="risk-meter">
+          <div id="riskMeterFill" class="risk-meter-fill"></div>
+        </div>
+        <div id="verdict" class="verdict">
+          Waiting for investigation...
+        </div>
+        <p id="verdictExplanation" class="verdict-explanation">
+          Investigation results will appear here.
+        </p>
+      </div>
+
+      <div class="evidence-grid">
+
+        <div class="evidence-card">
+          <span>💼</span>
+          <h3>Google Jobs</h3>
+          <strong id="jobsCount">0</strong>
+          <p>Listings found</p>
+        </div>
+
+        <div class="evidence-card">
+          <span>🔎</span>
+          <h3>Web Search</h3>
+          <strong id="searchCount">0</strong>
+          <p>Results found</p>
+        </div>
+
+        <div class="evidence-card">
+          <span>📰</span>
+          <h3>Google News</h3>
+          <strong id="newsCount">0</strong>
+          <p>Articles found</p>
+        </div>
+
+      </div>
+
+      <div class="details">
+
+        <div class="detail-card">
+          <h2>🚩 Red Flags</h2>
+          <ul id="redFlags">
+            <li>No investigation performed yet.</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h2>✅ Trust Signals</h2>
+          <ul id="trustSignals">
+            <li>No investigation performed yet.</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h2>⚠️ Contradictions</h2>
+          <ul id="contradictions">
+            <li>No contradictions detected.</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="evidence-sources">
+        <h2>🔗 Evidence Sources</h2>
+        <div id="evidenceSources">
+          <p>No evidence sources yet.</p>
+        </div>
+      </div>
+    </section>
+    <section class="history-section">
+      <div class="history-header">
+        <h2>📜 Investigation History</h2>
+        <button id="clearHistoryBtn" type="button">Clear History</button>
+      </div>
+
+      <div id="historyList">
+        <p>No investigations yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "jobshield-india",
+  "version": "1.0.0",
+  "description": "Helps Indian job seekers investigate whether a job opportunity is legitimate or potentially fraudulent.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": ["jobs", "fraud-detection", "serpapi", "india"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "serpapi": "^2.1.0"
+  }
+}
